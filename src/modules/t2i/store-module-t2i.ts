@@ -13,7 +13,7 @@ export const useTextToImageStore = create<TextToImageStore>()(
   persist(
     (_set) => ({
 
-      activeProviderId: null, // null: will auto-select the first availabe provider
+      activeProviderId: 'prodia', // prodia is free for first 1000 draw
       setActiveProviderId: (activeProviderId: string | null) => _set({ activeProviderId }),
 
     }),
